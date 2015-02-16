@@ -136,7 +136,7 @@ final class Clarity_Widget_Display {
 	 * @return void
 	 */
 	public function render_inline_css () {
-		echo '<style type="text/css">' . "\n" . '.clarity-fm-blog-widget { position: fixed; bottom: -10px; right: 2%; }' . "\n" . '</style>' . "\n";
+		echo '<style type="text/css">' . "\n" . '.clarity-fm-blog-widget { position: fixed; bottom: -10px; right: 2%; } @media only screen and (min-width : 375px) and (max-width : 667px) { body .clarity-fm-blog-widget { position: relative; margin-bottom: 0; text-align: center; } }' . "\n" . '</style>' . "\n";
 	} // End render_inline_css()
 
 	/**
